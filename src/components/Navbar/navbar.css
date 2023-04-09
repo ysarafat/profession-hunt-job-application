@@ -1,9 +1,15 @@
 .active{
     @apply text-primary hover:text-secondary 
 }
+li{
+    @apply mb-2
+}
 li:hover{
     @apply text-secondary
 }
 .btn{
-    @apply bg-gradient-to-r from-primary to-secondary px-[28px] py-[15px] text-xl rounded-lg hover:bg-gradient-to-l from-primary to-secondary text-white
+    @apply bg-gradient-to-r from-primary to-secondary text-xl rounded-lg hover:bg-gradient-to-l from-primary to-secondary text-white
+}
+.btn-sml{
+    @apply bg-gradient-to-r from-primary to-secondary text-lg rounded-lg hover:bg-gradient-to-l from-primary to-secondary text-white
 }

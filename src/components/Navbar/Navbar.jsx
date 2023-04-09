@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import "./navbar.css";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <nav className="bg-background font-primary">
       <div className="flex justify-between items-center container mx-auto px-4 py-5">
@@ -49,23 +49,25 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className="btn hidden lg:block">Start Applying</button>
+        <button className="btn hidden px-[25px] py-[15px] lg:block">
+          Start Applying
+        </button>
         <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center"
           >
             {!isOpen ? (
-              <Bars3Icon className="w-9 h-9 text-primary" />
-            ) : (
               <XMarkIcon className="w-9 h-9 text-primary" />
+            ) : (
+              <Bars3Icon className="w-9 h-9 text-primary" />
             )}
           </button>
           {!isOpen && (
             <>
               <ul
                 onClick={() => setIsOpen()}
-                className="absolute top-20 left-0 right-0 w-full px-5 py-5 z-10 bg-black text-white"
+                className="absolute  top-[76px] left-0 right-0 w-full px-5 py-5 z-10 bg-white"
               >
                 <li>
                   <NavLink
@@ -99,7 +101,9 @@ const Navbar = () => {
                     Blog
                   </NavLink>
                 </li>
-                <button className="btn ">Start Applying</button>
+                <button className="btn-sml px-6 py-2 mt-2">
+                  Start Applying
+                </button>
               </ul>
             </>
           )}
