@@ -9,13 +9,73 @@
         "location": "New York, US",
         "salary" : "95k-125k",
         "description" : "A Quality Assurance (QA) Engineer is responsible for ensuring that software applications and products meet the established quality standards and customer requirements. They work closely with software developers and project managers to identify and resolve software defects, bugs, and errors.",
-        "responsibility" : "Developing and implementing test plans, test cases, and automated testing scripts to ensure software quality and functionality, Conducting manual and automated testing of software applications and products to identify defects, bugs, and errors, Collaborating with software developers and project managers to identify and resolve technical issues and improve software quality, Documenting and reporting software defects and issues, and tracking them to resolution, Participating in code reviews and providing feedback on software development processes",
+        "responsibility" : ["Developing and implementing test plans, test cases, and automated testing scripts to ensure software quality and functionality.", "Conducting manual and automated testing of software applications and products to identify defects, bugs, and errors.", "Collaborating with software developers and project managers to identify and resolve technical issues and improve software quality.", "Documenting and reporting software defects and issues, and tracking them to resolution", "Participating in code reviews and providing feedback on software development processes."],
         "edu-requirements": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
         "experiance" : "1+ years of experience",
         "contact" : {
             "phone": "843-687-9419",
             "email": "dev@banglagoogle.com",
             "address": "Brooklyn, NY 11201, United States"
+        }
+
+    },
+    {
+        "id" : "623853b2614ad5aba311shd4",
+        "logo" : "meta.png",
+        "title" : "DevOps Engineer",
+        "company" : "Meta Inc.",
+        "type": "onsite",
+        "hours": "Full Time",
+        "location": "Toronto, Canada",
+        "salary" : "80k-150k",
+        "description" : "A DevOps Engineer is a professional responsible for managing the IT infrastructure, deployment pipeline, and software development processes of an organization. The role involves collaboration between software developers and operations teams to create a continuous delivery and deployment pipeline for software products.",
+        "responsibility" : ["Designing, developing, and maintaining a continuous integration and continuous deployment (CI/CD) pipeline to automate the software development process.","Managing and monitoring the IT infrastructure, including servers, networks, databases, and cloud services, to ensure high availability and performance.","Ensuring security, compliance, and governance requirements are met for all IT systems and software applications.","Keeping up-to-date with emerging trends and technologies in DevOps, automation, and cloud computing."],
+        "edu-requirements": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
+        "experiance" : "3+ years of experience",
+        "contact" : {
+            "phone": "843-457-94652",
+            "email": "career@meta.inc",
+            "address": "Toronto, ON M4C 1B5, Canada"
+        }
+
+    },
+    {
+        "id" : "623853b2614ad5aba311ghg7",
+        "logo" : "amazon.png",
+        "title" : "Cloud Solutions Architect",
+        "company" : "AWS.",
+        "type": "onsite",
+        "hours": "Full Time",
+        "location": "Lucky Plaza, Singapore",
+        "salary" : "240k-350k",
+        "description" : "A Cloud Solutions Architect is responsible for designing and implementing cloud-based solutions for businesses and organizations. They work closely with clients and stakeholders to identify their requirements, design cloud-based architectures, and develop solutions that align with their goals and needs.",
+        "responsibility" : ["Identifying and understanding client requirements, goals, and constraints for cloud-based solutions.", "Providing technical guidance, support, and training to development teams to ensure successful adoption of cloud technologies and best practices.", "Ensuring compliance with security and regulatory requirements, such as GDPR, HIPAA, or PCI-DSS, and implementing appropriate security controls."],
+        "edu-requirements": ["Bachelor's degree in software engineering", "Cloud Solutions Architect typically", "software engineering, or a related field"],
+        "experiance" : "10+ years of experience",
+        "contact" : {
+            "phone": "65-9-0492447",
+            "email": "job-ase@aws.sg",
+            "address": "123 Orchard Road, #05-06 Lucky Plaza, Singapore 238891"
+        }
+
+    },
+    {
+        "id" : "623853b2614ad5abam71ghg8",
+        "logo" : "micro.png",
+        "title" : "Full-Stack Developer",
+        "company" : "MIcrosoft",
+        "type": "Remote",
+        "hours": "Part Time",
+        "location": "London SW1A 1AA, UK",
+        "salary" : "40k-90k",
+        "description" : "A Full-Stack Developer is responsible for designing, developing, and maintaining web-based applications and software products. They are proficient in both front-end and back-end development and are comfortable working with databases, server-side languages, and client-side languages.",
+        "responsibility" : ["Designing, developing, and maintaining web-based applications and software products using both front-end and back-end technologies.", "Collaborating with cross-functional teams, such as project managers, designers, and other developers, to develop innovative and scalable solutions that meet clients' needs.", "Troubleshooting and resolving technical issues or bugs in web applications and software products."],
+        "edu-requirements": ["Bachelor's degree in software engineering", "Javascript Fundamental", "Advance React and Next JS "],
+        "experiance" : "1+ years of experience",
+        "contact" : {
+            "phone": "077 4708 4012",
+            "email": "job-webapp@micro.com",
+            "address": "123 Main Street, London SW1A 1AA, United Kingdom"
         }
 
     }
