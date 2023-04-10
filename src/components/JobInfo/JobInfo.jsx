@@ -67,16 +67,23 @@ const JobInfo = () => {
             <span className="font-extrabold text-deep-dark">
               Job Responsibility :{" "}
             </span>{" "}
-            {responsibility?.map((re) => (
-              <li className="my-2 hover:text-light-dark list-decimal">{re}</li>
+            {responsibility?.map((re, index) => (
+              <li
+                key={index}
+                className="my-2 hover:text-light-dark list-decimal"
+              >
+                {re}
+              </li>
             ))}
           </p>
           <p className="mb-6">
             <span className="font-extrabold text-deep-dark">
               Educational Requirements :{" "}
             </span>{" "}
-            {edu?.map((edu) => (
-              <li className="my-2 hover:text-light-dark list-disc">{edu}</li>
+            {edu?.map((edu, index) => (
+              <li key={index} className="my-2 hover:text-light-dark list-disc">
+                {edu}
+              </li>
             ))}
           </p>
           <p className="mb-16">

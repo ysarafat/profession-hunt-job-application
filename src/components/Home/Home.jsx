@@ -6,8 +6,13 @@ import { useLoaderData, useNavigation } from "react-router-dom";
 import Category from "../Category/Category";
 import Spinner from "../Spinner/Spinner";
 const Home = () => {
+  const [jobs, setJobs] = useState([]);
+  const circular = useLoaderData();
   const [categorys, setCategorys] = useState([]);
-  const jobs = useLoaderData();
+  useEffect(() => {
+    const jobSlice = circular.slice(0, 4);
+    setJobs(jobSlice);
+  }, []);
   useEffect(() => {
     fetch("category.json")
       .then((res) => res.json())
@@ -17,6 +22,9 @@ const Home = () => {
   if (spinner.state === "loading") {
     return <Spinner />;
   }
+  const handelData = () => {
+    setJobs(circular);
+  };
   return (
     <div className="font-primary">
       <Banner />
@@ -45,14 +53,21 @@ const Home = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-          {jobs.map((job) => (
+          {jobs?.map((job) => (
             <JobDetails key={job.id} job={job}></JobDetails>
           ))}
         </div>
         <div className="w-1/2 mx-auto text-center">
-          <button className="btn px-4 py-3 font-semibold mt-8 btn-sml mb-28">
-            See More
-          </button>
+          {jobs.length <= 4 ? (
+            <button
+              onClick={handelData}
+              className="btn px-4 py-3 font-semibold mt-8 btn-sml"
+            >
+              See More
+            </button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

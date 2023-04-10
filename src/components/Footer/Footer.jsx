@@ -4,7 +4,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="bg-deep-dark w-full font-primary">
+    <div className="bg-deep-dark w-full font-primary mt-28">
       <div className=" text-white  container mx-auto md:flex justify-between  px-4 pt-16 border-b-2 border-gray-800">
         <div className="w-full md:w-72 mb-10">
           <h2 className="text-3xl font-extrabold">Profession Hunt</h2>
