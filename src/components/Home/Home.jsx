@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Banner from "../Banner/Banner";
 import JobDetails from "../JobDetails/JobDetails";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import Category from "../Category/Category";
+import Spinner from "../Spinner/Spinner";
 const Home = () => {
   const [categorys, setCategorys] = useState([]);
   const jobs = useLoaderData();
@@ -12,7 +13,10 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setCategorys(data));
   }, []);
-
+  const spinner = useNavigation();
+  if (spinner.state === "loading") {
+    return <Spinner />;
+  }
   return (
     <div className="font-primary">
       <Banner />

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigation, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -9,6 +9,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import "./jobinfo.css";
+import Spinner from "../Spinner/Spinner";
 
 const JobInfo = () => {
   const jobs = useLoaderData();
@@ -28,6 +29,10 @@ const JobInfo = () => {
     title,
     contact,
   } = jobDetails;
+  const spinner = useNavigation();
+  if (spinner.state === "loading") {
+    return <Spinner />;
+  }
 
   return (
     <div className="">
