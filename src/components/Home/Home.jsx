@@ -32,10 +32,25 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="px-4 container mx-auto">
-        {jobs.map((job) => (
-          <JobDetails key={job.id} job={job}></JobDetails>
-        ))}
+      <div className="px-4 container mx-auto mt-12 lg:mt-16">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl md:5xl font-extrabold text-deep-dark">
+            Featured Jobs
+          </h1>
+          <p className="text-light-dark mt-4 ">
+            Select your dream job here with categories
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+          {jobs.map((job) => (
+            <JobDetails key={job.id} job={job}></JobDetails>
+          ))}
+        </div>
+        <div className="w-1/2 mx-auto text-center">
+          <button className="btn px-4 py-3 font-semibold mt-8 btn-sml mb-28">
+            See More
+          </button>
+        </div>
       </div>
     </div>
   );

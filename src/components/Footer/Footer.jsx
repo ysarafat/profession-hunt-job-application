@@ -56,7 +56,7 @@ const Footer = () => {
             <FontAwesomeIcon className="mr-2" icon={faPhone} /> +8801700-000015
           </p>
           <p className="text-light-dark">
-            <FontAwesomeIcon className="mr-2" icon={faEnvelope} />{" "}
+            <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
             contact@pro-hunt.com.bd
           </p>
           <p></p>
