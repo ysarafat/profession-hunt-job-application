@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./jobinfo.css";
 import Spinner from "../Spinner/Spinner";
+import { addToDb } from "../../Storage/Storage";
 
 const JobInfo = () => {
   const jobs = useLoaderData();
@@ -19,7 +20,10 @@ const JobInfo = () => {
     const finding = jobs.find((job) => job.id === identified.id);
     setJobDetails(finding);
   }, []);
-
+  const handelApply = (id) => {
+    addToDb(id);
+    console.log(id);
+  };
   const {
     description,
     responsibility,
@@ -28,6 +32,7 @@ const JobInfo = () => {
     salary,
     title,
     contact,
+    id,
   } = jobDetails;
   const spinner = useNavigation();
   if (spinner.state === "loading") {
@@ -134,7 +139,10 @@ const JobInfo = () => {
               {contact?.address}
             </p>
           </div>
-          <button className="btn btn-sml w-full px-[25px] py-[15px] mt-6 text-xl font-bold md:font-extrabold">
+          <button
+            onClick={() => handelApply(id)}
+            className="btn btn-sml w-full px-[25px] py-[15px] mt-6 text-xl font-bold md:font-extrabold"
+          >
             Apply Now
           </button>
         </div>
