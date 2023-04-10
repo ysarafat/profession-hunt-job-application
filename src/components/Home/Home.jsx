@@ -13,7 +13,6 @@ const Home = () => {
       .then((data) => setCategorys(data));
   }, []);
 
-  // console.log(jobs);
   return (
     <div className="font-primary">
       <Banner />

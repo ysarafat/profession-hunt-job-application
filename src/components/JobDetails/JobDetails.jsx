@@ -7,6 +7,7 @@ import {
 import { Link } from "react-router-dom";
 const JobDetails = ({ job }) => {
   const { id, logo, title, company, type, hours, location, salary } = job;
+
   return (
     <div className="border border-slate-300 p-10 rounded-lg">
       <img className="w-[300px] h-14 object-fit" src={logo} alt="" />
