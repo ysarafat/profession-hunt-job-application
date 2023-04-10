@@ -1,0 +1,56 @@
+import React, { useEffect, useState } from "react";
+import { getJobs } from "../../Storage/Storage";
+import { useLoaderData, useNavigation } from "react-router-dom";
+import ApplyJob from "../ApplyJob/ApplyJob";
+import Spinner from "../Spinner/Spinner";
+
+const Apply = () => {
+  const [applyJobs, setApplyJobs] = useState([]);
+  const jobsData = useLoaderData();
+  useEffect(() => {
+    const storedJobs = getJobs();
+    let jobs = [];
+    for (const id in storedJobs) {
+      const savedJob = jobsData.find((job) => job.id === id);
+      if (savedJob) {
+        jobs.push(savedJob);
+      }
+      setApplyJobs(jobs);
+    }
+  }, []);
+  const spinner = useNavigation();
+  if (spinner.state === "loading") {
+    return <Spinner />;
+  }
+
+  return (
+    <div className="">
+      <div className=" bg-background ">
+        <div className="flex md:flex-row flex-col justify-between relative">
+          <div className="hidden md:block">
+            <img src="/public/left.png" alt="" />{" "}
+          </div>
+          <div className="md:absolute md:left-[45%] left-[38%] ">
+            <h1 className="text-deep-dark text-4xl text-center  py-[39%] font-extrabold">
+              Apply Job
+            </h1>
+          </div>
+          <div className="hidden md:block">
+            <img
+              className="absolute -top-[98px] right-0"
+              src="/public/right.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 mt-20">
+        {applyJobs?.map((job) => (
+          <ApplyJob key={job.id} job={job}></ApplyJob>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Apply;

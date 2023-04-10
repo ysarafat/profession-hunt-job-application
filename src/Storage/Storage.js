@@ -6,8 +6,8 @@ const addToDb = id => {
         job[id] = 1;
     }
     else {
-        const newQuantity = quantity + 1;
-        job[id] = newQuantity;
+        // const newQuantity = quantity + 1;
+        // job[id] = newQuantity;
     }
     localStorage.setItem('job-id', JSON.stringify(job));
 }

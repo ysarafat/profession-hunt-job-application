@@ -22,7 +22,6 @@ const JobInfo = () => {
   }, []);
   const handelApply = (id) => {
     addToDb(id);
-    console.log(id);
   };
   const {
     description,

@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
 import JobInfo from "./components/JobInfo/JobInfo";
-import Spinner from "./components/Spinner/Spinner";
+import Apply from "./components/Apply/Apply";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +34,9 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
-        path: "/loder",
-        element: <Spinner />,
+        path: "/apply",
+        element: <Apply />,
+        loader: () => fetch("/jobs.json"),
       },
     ],
   },
