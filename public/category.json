@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "icon": "web.png",
+        "title" : "Web development",
+        "jobs": 57
+    },
+    {
+        "id":2,
+        "icon": "graphics.png",
+        "title" : "Graphics Design",
+        "jobs": 163
+    },
+    {
+        "id":3,
+        "icon": "marketing.png",
+        "title" : "Marketing & Sales",
+        "jobs": 620
+    },
+    {
+        "id":4,
+        "icon": "account.png",
+        "title" : "Account & Finance",
+        "jobs": 241
+    }
+]

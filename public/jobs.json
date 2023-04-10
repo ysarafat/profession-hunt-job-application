@@ -1,0 +1,22 @@
+[
+    {
+        "id" : "623853b2614ad5aba311fdd1",
+        "logo" : "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+        "title" : "Quality Assurance Engineer",
+        "company" : "Google LLC",
+        "type": "Remote",
+        "hours": "Full Time",
+        "location": "New York, US",
+        "salary" : "95k-125k",
+        "description" : "A Quality Assurance (QA) Engineer is responsible for ensuring that software applications and products meet the established quality standards and customer requirements. They work closely with software developers and project managers to identify and resolve software defects, bugs, and errors.",
+        "responsibility" : "Developing and implementing test plans, test cases, and automated testing scripts to ensure software quality and functionality, Conducting manual and automated testing of software applications and products to identify defects, bugs, and errors, Collaborating with software developers and project managers to identify and resolve technical issues and improve software quality, Documenting and reporting software defects and issues, and tracking them to resolution, Participating in code reviews and providing feedback on software development processes",
+        "edu-requirements": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
+        "experiance" : "1+ years of experience",
+        "contact" : {
+            "phone": "843-687-9419",
+            "email": "dev@banglagoogle.com",
+            "address": "Brooklyn, NY 11201, United States"
+        }
+
+    }
+]

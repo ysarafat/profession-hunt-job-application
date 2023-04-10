@@ -4,7 +4,7 @@ import Img from "../../assets/banner-img.png";
 const Banner = () => {
   return (
     <div className="w-full bg-background ">
-      <div className="container mx-auto p-4 font-primary lg:flex justify-between items-center ">
+      <div className="container mx-auto px-4 font-primary lg:flex justify-between items-center ">
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-7xl text-deep-dark font-extrabold">
             Discover your next career move with <br />
