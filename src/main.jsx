@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
 import JobInfo from "./components/JobInfo/JobInfo";
+import Spinner from "./components/Spinner/Spinner";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/loder",
+        element: <Spinner />,
       },
     ],
   },
