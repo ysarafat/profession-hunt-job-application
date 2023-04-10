@@ -33,7 +33,6 @@ const JobInfo = () => {
   if (spinner.state === "loading") {
     return <Spinner />;
   }
-
   return (
     <div className="">
       <div className=" bg-background ">
@@ -69,7 +68,7 @@ const JobInfo = () => {
               Job Responsibility :{" "}
             </span>{" "}
             {responsibility?.map((re) => (
-              <li className="my-2 hover:none list-decimal">{re}</li>
+              <li className="my-2 hover:text-light-dark list-decimal">{re}</li>
             ))}
           </p>
           <p className="mb-6">
@@ -77,7 +76,7 @@ const JobInfo = () => {
               Educational Requirements :{" "}
             </span>{" "}
             {edu?.map((edu) => (
-              <li className="my-2 hover:none list-disc">{edu}</li>
+              <li className="my-2 hover:text-light-dark list-disc">{edu}</li>
             ))}
           </p>
           <p className="mb-16">

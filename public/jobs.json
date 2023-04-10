@@ -10,7 +10,7 @@
         "salary" : "95k-125k",
         "description" : "A Quality Assurance (QA) Engineer is responsible for ensuring that software applications and products meet the established quality standards and customer requirements. They work closely with software developers and project managers to identify and resolve software defects, bugs, and errors.",
         "responsibility" : ["Developing and implementing test plans test cases and automated testing scripts to ensure software quality and functionality", "Conducting manual and automated testing of software applications and products to identify defects, bugs, and errors.", "Collaborating with software developers and project managers to identify and resolve technical issues and improve software quality.", "Documenting and reporting software defects and issues, and tracking them to resolution", "Participating in code reviews and providing feedback on software development processes"],
-        "edu-requirements": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
+        "edu": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
         "experiance" : "1+ years of experience",
         "contact" : {
             "phone": "843-687-9419",
@@ -30,7 +30,7 @@
         "salary" : "80k-150k",
         "description" : "A DevOps Engineer is a professional responsible for managing the IT infrastructure, deployment pipeline, and software development processes of an organization. The role involves collaboration between software developers and operations teams to create a continuous delivery and deployment pipeline for software products.",
         "responsibility" : ["Designing, developing, and maintaining a continuous integration and continuous deployment (CI/CD) pipeline to automate the software development process.","Managing and monitoring the IT infrastructure, including servers, networks, databases, and cloud services, to ensure high availability and performance.","Ensuring security, compliance, and governance requirements are met for all IT systems and software applications.","Keeping up-to-date with emerging trends and technologies in DevOps, automation, and cloud computing."],
-        "edu-requirements": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
+        "edu": ["Bachelor's degree in software engineering", "Experience with various SDLC methodologies"],
         "experiance" : "3+ years of experience",
         "contact" : {
             "phone": "843-457-94652",
@@ -70,7 +70,7 @@
         "salary" : "40k-90k",
         "description" : "A Full-Stack Developer is responsible for designing, developing, and maintaining web-based applications and software products. They are proficient in both front-end and back-end development and are comfortable working with databases, server-side languages, and client-side languages.}",
         "responsibility" : ["Designing, developing, and maintaining web-based applications and software products using both front-end and back-end technologies.", "Collaborating with cross-functional teams, such as project managers, designers, and other developers, to develop innovative and scalable solutions that meet clients' needs.", "Troubleshooting and resolving technical issues or bugs in web applications and software products."],
-        "edu-requirements": ["Bachelor's degree in software engineering", "Javascript Fundamental", "Advance React and Next JS "],
+        "edu": ["Bachelor's degree in software engineering", "Javascript Fundamental", "Advance React and Next JS "],
         "experiance" : "1+ years of experience",
         "contact" : {
             "phone": "077 4708 4012",
