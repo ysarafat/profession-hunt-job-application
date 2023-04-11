@@ -11,6 +11,7 @@ import {
 import "./jobinfo.css";
 import Spinner from "../Spinner/Spinner";
 import { addToDb } from "../../Storage/Storage";
+import PageTitle from "../PageTitle/PageTitle";
 
 const JobInfo = () => {
   const jobs = useLoaderData();
@@ -39,25 +40,7 @@ const JobInfo = () => {
   }
   return (
     <div className="">
-      <div className=" bg-background ">
-        <div className="flex md:flex-row flex-col justify-between relative">
-          <div className="hidden md:block">
-            <img src="/public/left.png" alt="" />{" "}
-          </div>
-          <div className="md:absolute md:left-[45%] left-[38%] ">
-            <h1 className="text-deep-dark text-4xl text-center  py-[39%] font-extrabold">
-              Job Details
-            </h1>
-          </div>
-          <div className="hidden md:block">
-            <img
-              className="absolute -top-[98px] right-0"
-              src="/public/right.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <PageTitle>Job Details</PageTitle>
       <div className="px-4 container mx-auto  md:grid grid-cols-6 font-primary gap-6 my-12 lg:my-16">
         <div className="col-span-4 text-light-dark font-medium">
           <p className="">

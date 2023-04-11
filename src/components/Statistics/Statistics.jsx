@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import Spinner from "../Spinner/Spinner";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Statistics = () => {
   const data = useLoaderData();
@@ -19,25 +20,7 @@ const Statistics = () => {
   }
   return (
     <>
-      <div className="bg-background">
-        <div className="flex md:flex-row flex-col justify-between relative">
-          <div className="hidden md:block">
-            <img src="/public/left.png" alt="" />{" "}
-          </div>
-          <div className="md:absolute md:left-[45%] left-[38%] ">
-            <h1 className="text-deep-dark text-4xl py-[70px] text-center font-extrabold">
-              Statistics
-            </h1>
-          </div>
-          <div className="hidden md:block">
-            <img
-              className="absolute -top-[98px] right-0"
-              src="/public/right.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <PageTitle>Statistics</PageTitle>
       <div className="container mx-auto mt-16 flex justify-center">
         <ResponsiveContainer width="100%" height={500}>
           <AreaChart

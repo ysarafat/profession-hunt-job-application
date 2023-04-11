@@ -4,6 +4,8 @@ import { useLoaderData, useNavigation } from "react-router-dom";
 import ApplyJob from "../ApplyJob/ApplyJob";
 import Spinner from "../Spinner/Spinner";
 import FilterJob from "../FilterJob/FilterJob";
+import headerLeft from "/public/left.png";
+import headerRight from "/public/right.png";
 
 const Apply = () => {
   const [applyJobs, setApplyJobs] = useState([]);
@@ -49,7 +51,7 @@ const Apply = () => {
       <div className=" bg-background ">
         <div className="flex md:flex-row flex-col justify-between relative">
           <div className="hidden md:block">
-            <img src="/public/left.png" alt="" />{" "}
+            <img src={headerLeft} alt="" />{" "}
           </div>
           <div className="md:absolute md:left-[45%] left-[38%] ">
             <h1 className="text-deep-dark text-4xl text-center  py-[70px] font-extrabold">
@@ -59,7 +61,7 @@ const Apply = () => {
           <div className="hidden md:block">
             <img
               className="absolute -top-[98px] right-0"
-              src="/public/right.png"
+              src={headerRight}
               alt=""
             />
           </div>
