@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./Home.css";
 import Banner from "../Banner/Banner";
 import JobDetails from "../JobDetails/JobDetails";
 import { useLoaderData, useNavigation } from "react-router-dom";

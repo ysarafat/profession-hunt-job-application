@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex justify-between items-center">
           <ul className="flex justify-between items-center gap-4 text-base font-medium">
-            <li>
+            <li className="hover:text-secondary">
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? "active" : "")}
@@ -23,7 +23,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="hover:text-secondary">
               <NavLink
                 to="/statistics"
                 className={({ isActive }) => (isActive ? "active" : "")}
@@ -31,7 +31,7 @@ const Navbar = () => {
                 Statistics
               </NavLink>
             </li>
-            <li>
+            <li className="hover:text-secondary">
               <NavLink
                 to="/apply"
                 className={({ isActive }) => (isActive ? "active" : "")}
@@ -39,7 +39,7 @@ const Navbar = () => {
                 Apply Jobs
               </NavLink>
             </li>
-            <li>
+            <li className="hover:text-secondary">
               <NavLink
                 to="/blog"
                 className={({ isActive }) => (isActive ? "active" : "")}
@@ -69,7 +69,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen()}
                 className="absolute  top-[76px] left-0 right-0 w-full px-5 py-5 z-10 bg-white"
               >
-                <li>
+                <li className="hover:text-secondary">
                   <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? "active" : "")}
@@ -77,7 +77,7 @@ const Navbar = () => {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                <li className="hover:text-secondary">
                   <NavLink
                     to="/statistics"
                     className={({ isActive }) => (isActive ? "active" : "")}
@@ -85,7 +85,7 @@ const Navbar = () => {
                     Statistics
                   </NavLink>
                 </li>
-                <li>
+                <li className="hover:text-secondary">
                   <NavLink
                     to="/apply"
                     className={({ isActive }) => (isActive ? "active" : "")}

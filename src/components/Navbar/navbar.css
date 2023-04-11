@@ -4,9 +4,6 @@
 li{
     @apply mb-2
 }
-li:hover{
-    @apply text-secondary
-}
 .btn{
     @apply bg-gradient-to-r from-primary to-secondary text-xl rounded-lg hover:bg-gradient-to-l from-primary to-secondary text-white
 }
