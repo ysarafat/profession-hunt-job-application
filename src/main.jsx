@@ -9,12 +9,13 @@ import JobInfo from "./components/JobInfo/JobInfo";
 import Apply from "./components/Apply/Apply";
 import Statistics from "./components/Statistics/Statistics";
 import "./index.css";
+import Error from "./components/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-
+    errorElement: <Error />,
     children: [
       {
         path: "/",
