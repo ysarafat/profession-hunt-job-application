@@ -44,7 +44,7 @@ const ApplyJob = ({ job }) => {
         <div>
           <Link to={`/job-details/${id}`}>
             <button className="btn px-4 py-3 font-semibold mt-8 btn-sml">
-              View Deails
+              View Details
             </button>
           </Link>
         </div>

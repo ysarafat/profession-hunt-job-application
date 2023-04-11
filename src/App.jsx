@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -11,6 +12,7 @@ function App() {
         <Outlet />
       </div>
       <Footer />
+      <Toaster />
     </>
   );
 }

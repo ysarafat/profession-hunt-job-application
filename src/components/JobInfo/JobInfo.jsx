@@ -39,7 +39,7 @@ const JobInfo = () => {
     return <Spinner />;
   }
   return (
-    <div className="">
+    <div>
       <PageTitle>Job Details</PageTitle>
       <div className="px-4 container mx-auto  md:grid grid-cols-6 font-primary gap-6 my-12 lg:my-16">
         <div className="col-span-4 text-light-dark font-medium">

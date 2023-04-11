@@ -1,13 +1,14 @@
+import toast from 'react-hot-toast';
 const addToDb = id => {
     let job = getJobs();
     // add quantity
     const quantity = job[id];
-    if (!quantity) {
-        job[id] = 1;
+    if (quantity) {
+        toast.error("Already application submitted");
     }
     else {
-        // const newQuantity = quantity + 1;
-        // job[id] = newQuantity;
+        job[id] = 1;
+        toast.success("Application submitted successfully")
     }
     localStorage.setItem('job-id', JSON.stringify(job));
 }
@@ -20,6 +21,7 @@ const getJobs = () => {
         job = JSON.parse(storedJob);
     }
     return job;
+
 }
 
 export { addToDb, getJobs }
