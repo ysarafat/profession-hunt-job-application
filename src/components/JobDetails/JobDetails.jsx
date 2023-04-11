@@ -28,7 +28,7 @@ const JobDetails = ({ job }) => {
           {hours}
         </p>
       </div>
-      <div className=":flex items-center gap-6 text-light-dark text-lg md:text-xl font-semibold">
+      <div className="md:flex items-center gap-6 text-light-dark text-lg md:text-xl font-semibold">
         <p>
           <FontAwesomeIcon className="mr-2" icon={faLocationDot} /> {location}
         </p>
