@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App";
 import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
 import JobInfo from "./components/JobInfo/JobInfo";
 import Apply from "./components/Apply/Apply";
-import FilterJob from "./components/FilterJob/FilterJob";
+import Statistics from "./components/Statistics/Statistics";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -40,8 +40,9 @@ const router = createBrowserRouter([
         loader: () => fetch("/jobs.json"),
       },
       {
-        path: "/filter",
-        element: <FilterJob />,
+        path: "/statistics",
+        element: <Statistics />,
+        loader: () => fetch("/marks.json"),
       },
     ],
   },

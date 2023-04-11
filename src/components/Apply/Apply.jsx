@@ -52,7 +52,7 @@ const Apply = () => {
             <img src="/public/left.png" alt="" />{" "}
           </div>
           <div className="md:absolute md:left-[45%] left-[38%] ">
-            <h1 className="text-deep-dark text-4xl text-center  py-[39%] font-extrabold">
+            <h1 className="text-deep-dark text-4xl text-center  py-[70px] font-extrabold">
               Apply Job
             </h1>
           </div>
