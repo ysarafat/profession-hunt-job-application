@@ -8,6 +8,7 @@ import Blog from "./components/Blog/Blog";
 import JobDetails from "./components/JobDetails/JobDetails";
 import JobInfo from "./components/JobInfo/JobInfo";
 import Apply from "./components/Apply/Apply";
+import FilterJob from "./components/FilterJob/FilterJob";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         path: "/apply",
         element: <Apply />,
         loader: () => fetch("/jobs.json"),
+      },
+      {
+        path: "/filter",
+        element: <FilterJob />,
       },
     ],
   },

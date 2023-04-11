@@ -3,21 +3,42 @@ import { getJobs } from "../../Storage/Storage";
 import { useLoaderData, useNavigation } from "react-router-dom";
 import ApplyJob from "../ApplyJob/ApplyJob";
 import Spinner from "../Spinner/Spinner";
+import FilterJob from "../FilterJob/FilterJob";
 
 const Apply = () => {
   const [applyJobs, setApplyJobs] = useState([]);
+  const [filterRemote, setFilterRemote] = useState([]);
+  const [filterOnsite, setFilterOnsite] = useState([]);
   const jobsData = useLoaderData();
   useEffect(() => {
     const storedJobs = getJobs();
     let jobs = [];
+    let remotJobs = [];
+    let onsiteJobs = [];
     for (const id in storedJobs) {
       const savedJob = jobsData.find((job) => job.id === id);
       if (savedJob) {
         jobs.push(savedJob);
+        if (savedJob.type === "Remote") {
+          remotJobs.push(savedJob);
+        }
+        if (savedJob.type === "Onsite") {
+          onsiteJobs.push(savedJob);
+        }
       }
-      setApplyJobs(jobs);
     }
+    setApplyJobs(jobs);
+    setFilterRemote(remotJobs);
+    setFilterOnsite(onsiteJobs);
   }, []);
+
+  const filterRemoteJob = () => {
+    setApplyJobs(filterRemote);
+  };
+  const filterOnsiteJob = () => {
+    setApplyJobs(filterOnsite);
+  };
+
   const spinner = useNavigation();
   if (spinner.state === "loading") {
     return <Spinner />;
@@ -45,9 +66,17 @@ const Apply = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-20">
-        {applyJobs?.map((job) => (
-          <ApplyJob key={job.id} job={job}></ApplyJob>
-        ))}
+        <div className="text-end">
+          <FilterJob
+            filterRemote={filterRemoteJob}
+            filterOnsite={filterOnsiteJob}
+          />
+        </div>
+        <div>
+          {applyJobs?.map((job) => (
+            <ApplyJob key={job.id} job={job}></ApplyJob>
+          ))}
+        </div>
       </div>
     </div>
   );
