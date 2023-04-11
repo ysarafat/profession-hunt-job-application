@@ -1,6 +1,6 @@
 [
     {
-        "id" : "623853b2614ad5aba311fdd1",
+        "id" : "f079",
         "logo" : "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
         "title" : "Quality Assurance Engineer",
         "company" : "Google LLC",
@@ -20,7 +20,7 @@
 
     },
     {
-        "id" : "623853b2614ad5aba311shd4",
+        "id" : "494e",
         "logo" : "meta.png",
         "title" : "DevOps Engineer",
         "company" : "Meta Inc.",
@@ -40,7 +40,7 @@
 
     },
     {
-        "id" : "623853b2614ad5aba311ghg7",
+        "id" : "8fb4",
         "logo" : "amazon.png",
         "title" : "Cloud Solutions Architect",
         "company" : "AWS.",
@@ -60,7 +60,7 @@
 
     },
     {
-        "id" : "623853b2614ad5abam71ghg8",
+        "id" : "b8db",
         "logo" : "micro.png",
         "title" : "Full-Stack Developer",
         "company" : "MIcrosoft",
@@ -80,7 +80,7 @@
 
     },
     {
-        "id" : "623853b2614ad5abam",
+        "id" : "a0aa",
         "logo" : "tesla-logo.png",
         "title" : "Digital Marketing Manager",
         "company" : "Tesla",
@@ -100,7 +100,7 @@
 
     },
     {
-        "id" : "623853b2614ad5",
+        "id" : "4kdi",
         "logo" : "openai.png",
         "title" : "Software Engineer",
         "company" : "Open AI",

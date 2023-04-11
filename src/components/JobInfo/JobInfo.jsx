@@ -23,6 +23,7 @@ const JobInfo = () => {
   }, []);
   const handelApply = (id) => {
     addToDb(id);
+    window.scrollTo(0, 0);
   };
   const {
     description,
@@ -38,6 +39,7 @@ const JobInfo = () => {
   if (spinner.state === "loading") {
     return <Spinner />;
   }
+
   return (
     <div>
       <PageTitle>Job Details</PageTitle>

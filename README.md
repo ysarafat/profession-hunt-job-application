@@ -1,6 +1,6 @@
 # Profession Hunt
 
-#### Live Website Link : [Profession Hunt](https://arafat5872.netlify.app)
+#### Live Website Link : [https://profession-hunt.netlify.app](https://profession-hunt.netlify.app);
 
 ### Website Main features
 

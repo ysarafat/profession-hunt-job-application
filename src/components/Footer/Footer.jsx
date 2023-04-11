@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Facebook from "/public/facebook.png";
+import Instagram from "/public/instagram.png";
+import Twitter from "/public/twiter.png";
 
 const Footer = () => {
   return (
@@ -14,9 +17,21 @@ const Footer = () => {
             career options.
           </p>
           <div className="flex gap-3 items-center">
-            <FontAwesomeIcon className="w-5 h-5" icon={faEnvelope} />
-            <FontAwesomeIcon className="w-5 h-5" icon={faEnvelope} />
-            <FontAwesomeIcon className="w-5 h-5" icon={faEnvelope} />
+            <img
+              className="bg-white p-3 rounded-full w-10 h-10 cursor-pointer"
+              src={Facebook}
+              alt="facebook"
+            />
+            <img
+              className="bg-white p-3 rounded-full w-10 h-10 cursor-pointer"
+              src={Instagram}
+              alt="instagram"
+            />
+            <img
+              className="bg-white p-3 rounded-full w-10 h-10 cursor-pointer"
+              src={Twitter}
+              alt="twiter"
+            />
           </div>
         </div>
         <div className="mb-10">

@@ -7,6 +7,9 @@ import {
 import { Link } from "react-router-dom";
 const JobDetails = ({ job }) => {
   const { id, logo, title, company, type, hours, location, salary } = job;
+  const fixdScroll = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="border border-slate-300 p-10 rounded-lg">
@@ -35,7 +38,10 @@ const JobDetails = ({ job }) => {
         </p>
       </div>
       <Link to={`/job-details/${id}`}>
-        <button className="btn px-4 py-3 font-semibold mt-8 btn-sml">
+        <button
+          onClick={() => fixdScroll()}
+          className="btn px-4 py-3 font-semibold mt-8 btn-sml"
+        >
           View Details
         </button>
       </Link>

@@ -48,7 +48,8 @@ const Home = () => {
             Featured Jobs
           </h1>
           <p className="text-light-dark mt-4 ">
-            Select your dream job here with categories
+            Find your favorite job here. There are jobs in all categories of
+            many companies including domestic and foreign
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -62,7 +63,7 @@ const Home = () => {
               onClick={handelData}
               className="btn px-4 py-3 font-semibold mt-8 btn-sml"
             >
-              See More
+              See More Jobs
             </button>
           ) : (
             ""
