@@ -1,12 +1,12 @@
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import "./navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
-    <nav className="bg-background font-primary">
+    <nav className="bg-background font-primary border-b border-slate-200">
       <div className="flex justify-between items-center container mx-auto px-4 py-5">
         <div>
           <Link to="/">
@@ -66,7 +66,7 @@ const Navbar = () => {
           {!isOpen && (
             <>
               <ul
-                onClick={() => setIsOpen()}
+                onClick={() => setIsOpen(!isOpen)}
                 className="absolute  top-[76px] left-0 right-0 w-full px-5 py-5 z-10 bg-white"
               >
                 <li className="hover:text-secondary">
